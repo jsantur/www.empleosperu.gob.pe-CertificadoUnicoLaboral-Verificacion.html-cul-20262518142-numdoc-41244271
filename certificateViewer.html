@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <script async="" src="./Ministerio de Trabajo - Certificado Único Laboral_files/js"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-136584263-1');
+</script>
+
+<meta http-equiv="Content-Language" content="es-ES">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Visor de Certificado - Certificado Único Laboral</title>
+<meta name="description" content="Visor de certificado.">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/images/favicon.ico" rel="shortcut icon" type="image/png">
+<link rel="stylesheet" href="./Ministerio de Trabajo - Certificado Único Laboral_files/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./Ministerio de Trabajo - Certificado Único Laboral_files/bootstrap-datepicker.min.css">
+<link href="./Ministerio de Trabajo - Certificado Único Laboral_files/css" rel="stylesheet">
+<link rel="stylesheet" href="./Ministerio de Trabajo - Certificado Único Laboral_files/cul.css">
+
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/jquery.min.js.descarga"></script>
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/jquery.redirect.js.descarga"></script>
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/jquery.validate.min.js.descarga"></script>
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/bootstrap-datepicker.js.descarga"></script>
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/bootstrap-datepicker.es.min.js.descarga"></script>
+
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/popper.min.js.descarga"></script>
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/bootstrap.min.js.descarga" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script src="./Ministerio de Trabajo - Certificado Único Laboral_files/certijoven-v3.1.js.descarga"></script>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <a class="navbar-brand logo-gob" href="https://www.empleosperu.gob.pe/">
+        <img src="./Ministerio de Trabajo - Certificado Único Laboral_files/escudo.svg" alt="Logotipo Gobierno del Perú" class="escudo">
+        <img src="./Ministerio de Trabajo - Certificado Único Laboral_files/logo.svg" alt="Logotipo Gobierno del Perú" class="texto-gob">
+    </a>
+    <a class="nav-link logo-texto" href="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral">Ministerio de Trabajo<br>y Promoción del Empleo</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active"></li>
+        </ul>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                        <a class="nav-link" href="https://www.empleosperu.gob.pe/">Inicio</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container-fluid miga">
+    <div class="container">
+        <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item miga-home">
+                    <a href="https://www.empleosperu.gob.pe/"><span class="material-icons-outlined">home</span></a>
+                </li>
+                <li class="breadcrumb-item"><a href="https://www.empleosperu.gob.pe/">Ministerio de Trabajo y Promoción del Empleo</a></li>
+                <li class="breadcrumb-item active" aria-current="page"><a href="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral">Certificado Único Laboral</a></li>
+            </ol>
+        </nav>
+    </div>
+</div>
+
+<div class="container cul-verificacion">
+  <div class="row">
+    <div class="col text-center">
+      <h1 class="text-danger">Certificado Único Laboral</h1>
+    </div>
+  </div>
+  <div class="row justify-content-center mt-3">
+     <div class="col-md-8 text-center">
+       <div class="controls mb-3">
+          <button id="prev" class="btn btn-danger">Anterior</button>
+          <button id="next" class="btn btn-danger">Siguiente</button>
+       </div>
+       <div id="pageInfo" class="mb-2">Pág.: 1 / 2</div>
+       <img id="certImg" src="" alt="Certificado" class="img-fluid d-block mx-auto">
+     </div>
+  </div>
+</div>
+
+<footer class="footer">
+
+    <div class="container footer-top">
+        <div class="row">
+            <div class="col text-center popup" onclick="showPopup()">
+                <p>
+                    <a target="_blank" href="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/files/Ley%2031760%20-%20Ley%20CUL.pdf"><b>Ley</b></a> y
+                    <a target="_blank" href="https://www.empleosperu.gob.pe/CertificadoUnicoLaboral/files/Ley%2031760%20-%20Reglamento.pdf"><b>Reglamento</b></a>
+                    del Certificado Único Laboral </p>
+                 <span class="popuptext" id="LeyPopup">
+                Con la aprobación de su reglamento, el pasado 30 de diciembre del 2023
+                entra en vigencia la Ley N° 31760, Ley del Certificado Único Laboral.
+                En dicho marco se irán implementando progresivamente algunas mejoras
+                a este servicio, iniciando una marcha blanca desde el 23 de junio del 2024.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-6 col-md-4">
+                    <img src="./Ministerio de Trabajo - Certificado Único Laboral_files/pastillaMTPE.svg" alt="pastilla Ministerio de Trabajo" class="float-left mt-5 mb-5">
+                </div>
+                <div class="col-sm-6 col-md-4 offset-md-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    (function(){
+        var imgs = ["Ministerio de Trabajo - Certificado Único Laboral_files/CERTIFICADO.png", "Ministerio de Trabajo - Certificado Único Laboral_files/CERTIFICADO__2.png"];
+        function getParam(name) {
+            var params = new URLSearchParams(window.location.search);
+            return params.get(name);
+        }
+        var index = parseInt(getParam('img')) || 1;
+        if (index < 1) index = 1;
+        if (index > imgs.length) index = imgs.length;
+        var imgEl = document.getElementById('certImg');
+        function update(){
+            // encode path to handle spaces
+            imgEl.src = encodeURI(imgs[index-1]);
+            // actualizar paginación
+            var pageInfo = document.getElementById('pageInfo');
+            if(pageInfo) pageInfo.textContent = 'Pág.: ' + index + ' / ' + imgs.length;
+        }
+        document.getElementById('prev').addEventListener('click', function(){
+            if(index>1){ index--; update(); window.history.replaceState({}, '', '?img='+index); }
+        });
+        document.getElementById('next').addEventListener('click', function(){
+            if(index<imgs.length){ index++; update(); window.history.replaceState({}, '', '?img='+index); }
+        });
+        update();
+    })();
+</script>
+
+</body>
+</html>
